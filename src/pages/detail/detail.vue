@@ -6,9 +6,9 @@
 			<div class="info-box">
 				<div class="info-header">
 					<p class="title">{{list.name}}</p>
-					<p class="tel"><a :href="'tel:'+ list.tel"></a><span class="icon-box"><i class="icon-phone"></i></span>{{list.tel}}</a></p>
+					<p class="tel"><a :href="'tel:'+ list.tel"></a><span><i class="icon-phone"></i></span>{{list.tel}}</a></p>
 				</div>
-				<p><span></span>{{address}}</p>
+				<p><span></span>{{list.address}}</p>
 			</div>
 		</div>
 	</div>
