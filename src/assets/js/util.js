@@ -9,7 +9,7 @@ import common from '@/assets/js/common';
 import toastComponent from '@/components/toast'
 //axios
 const service = axios.create({
-    baseURL: 'https://easy-mock.com/mock/5bebc36ae0c6d321cade73f4/travel', // api 的 base_url
+    baseURL: 'http://rap2api.taobao.org/app/mock/116731', // api 的 base_url
     timeout: 5000 // 请求超时时间   
 });
 // request拦截器
