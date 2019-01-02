@@ -24,7 +24,7 @@
 + axios拦截设置
 
 ## 传送门
-[项目](http://lktop.coding.me/project/vue-demo/dist)
+[项目预览](http://lktop.coding.me/project/vue-demo/dist)
 
 ## 感谢
 喜欢的同学可以顺手给个star支持一下，谢谢！！

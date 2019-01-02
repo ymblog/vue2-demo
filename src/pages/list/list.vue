@@ -3,7 +3,7 @@
 		<my-header :title="type[$route.params.type - 1]" isSearch="true" @search="search"></my-header>	
 		<div class="lt-block">
 			<div class="shop-list">
-				<router-link v-for="(item,index) in list" :to="{name:'detail',params:{id:index}}">
+				<router-link v-for="(item,index) in list" :to="{name:'detail',params:{id:index}}" :key="index">
 					<div class="shop-img">
 						<img class="lazyload" v-lazy="item.pic">
 					</div>
