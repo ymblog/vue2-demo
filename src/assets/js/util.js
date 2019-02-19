@@ -9,8 +9,8 @@ import common from '@/assets/js/common';
 import toastComponent from '@/components/toast'
 //axios
 const service = axios.create({
-    baseURL: 'http://rap2api.taobao.org/app/mock/116731', // api 的 base_url
-    timeout: 5000 // 请求超时时间   
+    baseURL: 'https://easy-mock.com/mock/5bd6c161fffb9b57ff8cf3f8/admin', // api 的 base_url
+    timeout: 10000 // 请求超时时间   
 });
 // request拦截器
 service.interceptors.request.use(
@@ -19,8 +19,7 @@ service.interceptors.request.use(
         return config;
     },
     error => {
-        console.log(error);
-        Promise.reject(error);
+        Vue.prototype.$toast(res.message);
     }
 );
 // response 拦截器
@@ -40,14 +39,12 @@ service.interceptors.response.use(
             }else{
                 Vue.prototype.$toast(res.message);
             }
-            return Promise.reject('error');
         } else {
             return res;
         }
     },
     error => {
-        Vue.prototype.$toast(error.message);
-        return Promise.reject(error);
+        Vue.prototype.$toast();
     }
 )
 export default {
